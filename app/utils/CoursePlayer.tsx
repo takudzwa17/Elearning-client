@@ -31,7 +31,7 @@ const CoursePlayer: FC<Props> = ({ videoUrl }) => {
     >
       {videoData.otp && videoData.playbackInfo !== "" && (
         <iframe
-          src={`https://player.vdocipher.com/v2/?otp=20160313versUSE323NRvVSd1EWhnJLIWyn3700r77YRcKIZVGGaLQcYlM0EqwW1&playbackInfo=eyJ2aWRlb0lkIjoiYWVmM2JjZDk3MzI4NDMyMmE5NGRiMGU1N2E4OGQ4ZTYifQ==
+          src={`https://player.vdocipher.com/v2/?otp=${videoData?.otp}&playbackInfo=${videoData?.playbackInfo}
           &player=o22HhkxWwt6wq5n6`}
           style={{
             border: 0,
